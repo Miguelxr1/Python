@@ -48,3 +48,6 @@ while op != 5:
         sleep(2)
     elif op == 5:
         print('Obrigado por usar o programa!')
+    else:
+        print('Digito inválido! Reiniciando o programa...')
+        sleep(2)
