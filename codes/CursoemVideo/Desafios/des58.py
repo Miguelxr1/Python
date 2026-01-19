@@ -11,8 +11,12 @@ while nj != nc:
     nj = int(input('Tente adivinhar qual número eu pensei: '))
     c += 1
     if nj != nc:
-        sleep(0.5)
-        print('número errado!')
+        if nj > nc:
+            print('Menos... tente de novo!')
+            sleep(0.5)
+        elif nj < nc:
+            print('Mais... tente de novo!')
+            sleep(0.5)
 sleep(0.5)
 if c == 1:
     print(f'Parabéns, você acertou o número de primeira!')

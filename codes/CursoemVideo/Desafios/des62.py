@@ -27,4 +27,5 @@ while n != 0:
         sleep(0.5)
     n = int(input('Deseja ver mais quantos termos? (digite 0 para sair) '))
     
+print(f'Foram mostrados {c} termos')
 print('Obrigado por usar nosso programa!')
