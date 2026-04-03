@@ -4,7 +4,6 @@ ns = []
 
 for c in range(5):
     ns.append(randint(1, 10))
-
 ns = tuple(ns)
 
 print(f"Os número sorteados foram {ns}")
