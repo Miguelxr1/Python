@@ -6,7 +6,7 @@ while True:
     n.append(int(input('Digite um número: ')))
     while True:
         p = input('Você quer continuar? [S/N] ').upper().strip()
-        if p == 'N':
+        if p in 'NS':
             break
     if p == 'N':
         break
