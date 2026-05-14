@@ -12,7 +12,6 @@ while True:
     if p == 'N':
         break
 
-
 maior_peso = pessoas[0][1]
 maior_nome = pessoas[0][0]   
 menor_peso = pessoas[0][1]

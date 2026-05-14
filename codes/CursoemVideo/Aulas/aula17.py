@@ -56,4 +56,3 @@ y[2] = 8
 print(f'Lista X: {x}')
 print(f'Lista Y: {y}')
 print()
-
