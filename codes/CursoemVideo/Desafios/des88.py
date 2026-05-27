@@ -11,12 +11,13 @@ while True:
         for i in range(0, 6):
             n = randint(1, 60)
             ns.append(n)
+        ns.sort()
         jogos.append(ns[:])
         ns.clear()
     break
 
 print(f'----------< SORTEANDO {p} JOGOS >----------')
-sleep(0.5)
+sleep(1)
 
 while True:
     if count != p:

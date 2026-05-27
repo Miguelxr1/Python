@@ -1,0 +1,24 @@
+from datetime import date
+
+dados = dict()
+year =  2018#date.today().year
+
+dados['nome'] = str(input('Nome: '))
+dados['idade'] = year - int(input('Ano de nascimento: '))
+dados['ctps'] = int(input('Cateira de trabalho: (0 não tem): '))
+
+if dados['ctps'] != 0:
+    dados['contratacao'] = int(input('Ano de contratacao: '))
+    dados['salario'] = float(input('Salário: R$'))
+    dados['aposentadoria'] = (year - dados['contratacao']) + 35
+    
+    print(f'Nome tem valor de {dados['nome']}')
+    print(f'Idade tem valor de {dados['idade']}')
+    print(f'CTPS tem valor de {dados['ctps']}')
+    print(f'Contratação tem o valor de {dados['contratacao']}')
+    print(f'Salário tem valor de {dados['salario']}')
+    print(f'Aposentadoria tem valor de {dados['aposentadoria']}')
+else:
+    print(f'Nome tem valor de {dados['nome']}')
+    print(f'Idade tem valor de {dados['idade']}')
+    print(f'CTPS tem valor de {dados['ctps']}')
