@@ -1,7 +1,8 @@
 def escreva(txt):
-    print('-'*30)
-    print(txt)
-    print('-'*30)
+    tam = len(txt) + 4
+    print('-'*tam)
+    print(f'  {txt}')
+    print('-'*tam)
 
 escreva('Gustavo Gaunabara')
 escreva('Curso de Python No Youtube')
