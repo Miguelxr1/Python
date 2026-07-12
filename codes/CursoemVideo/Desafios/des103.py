@@ -3,4 +3,7 @@ def ficha(nome='<desconhecido>', gols=0):
 
 n = input('Nome do jogador: ')
 g = input('Número de Gols: ')
-ficha(n, g)
+ficha(
+    nome=n or '<desconhecido', 
+    gols=int(g) if g else 0
+      )
