@@ -1,6 +1,14 @@
 dados = {'total': 0, 'maior': 0, 'menor': 0, 'média': 0}
 
 def notas(*num, sit=False):
+    """Programa que recebe notas de alunos, conta quantas elas são, mostra a maior, a menor e a média delas, além da situação que é opcional.
+
+    Args:
+        sit (bool, optional): usada para mostrar a situação do aluno. Defaults to False.
+
+    Returns:
+        dict : dicionário contendo todos os dados
+    """
     dados['total'] = len(num)
     
     maior = num[0]
