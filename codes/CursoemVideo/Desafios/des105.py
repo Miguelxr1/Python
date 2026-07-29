@@ -21,9 +21,13 @@ def notas(*num, sit=False):
     dados['média'] = s/len(num)
     
     if sit:
-        if dados['média'] < 5:
-            dados['média'] = 'RUIM'    
+        if dados['média'] <= 5:
+            dados['situação'] = 'RUIM'    
+        elif dados['média'] <= 7:
+            dados['situação'] = 'RAZOÁVEL'
+        else:
+            dados['situação'] = 'BOA'
     return dados
 
-resp = notas(5.5, 9.5, 10, 6.5)
+resp = notas(5.5, 9.5, 10, 6.5, sit=True)
 print(resp)
