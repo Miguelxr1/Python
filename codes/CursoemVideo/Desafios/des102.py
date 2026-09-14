@@ -8,7 +8,6 @@ def fatorial(num, show=False):
     Returns:
         _int_: O valor do fatorial do número
     """
-    global f
     f = 1
     for c in range(num, 0, -1):
         f *= c

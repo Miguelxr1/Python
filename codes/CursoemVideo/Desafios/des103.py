@@ -6,4 +6,4 @@ g = input('Número de Gols: ')
 ficha(
     nome=n or '<desconhecido', 
     gols=int(g) if g else 0
-      )
+    )

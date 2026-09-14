@@ -5,7 +5,7 @@ def voto(ano):
     v = ''
     if idade < 16:
         v = 'voto NEGADO'
-    elif idade == 16 or idade == 17 or idade >= 70:
+    elif idade == 16 or idade == 17 or idade > 65:
         v = 'voto OPCIONAL'
     elif idade >= 18:
         v = 'voto OBRIGATÓRIO'
